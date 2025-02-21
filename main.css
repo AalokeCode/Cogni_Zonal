@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #0a0b1a;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  border-bottom: 1px solid rgba(55, 55, 56, 1);
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: rgba(0, 0, 10, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+nav .logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(135deg, #cb3cff, #792bff);
+  background-clip: text;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav li {
+  color: grey;
+  font-family: "Roboto Condensed";
+}
+
+button {
+  background-color: #cb3cff;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 40px 48px;
+}
+
+header h1 {
+  font-size: 56px;
+}
+
+header h1 span {
+  background: linear-gradient(135deg, #cb3cff, #792bff);
+  color: transparent;
+  background-clip: text;
+}
+
+header .image-div {
+  position: relative;
+}
+
+header img {
+  display: absolute;
+}
+
+header .front {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(96, 68, 122, 0.5);
+}
+
+header .behind {
+  position: absolute;
+  top: 20px;
+  left: -120px;
+  width: 100%;
+  transform: scale(1);
+  height: 100%;
+}
+
+header img {
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.03);
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 48px 40px;
+}
+
+.statistics h3 {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+.statistics p {
+  color: gray;
+  margin: 0;
+}
+
+.statistics div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* change color of test when name class is hovered*/
+
+.statistics .name:hover .test {
+  color: purple;
+}
+
+.finalheader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.features-container {
+  padding: 48px 48px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.features img {
+  width: 100%;
+  box-shadow: 0 20px 20px rgba(44, 36, 52, 0.5);
+}
+
+.features-container h1 {
+  background: linear-gradient(135deg, #cb3cff, #792bff);
+  color: transparent;
+  background-clip: text;
+  font-size: 36px;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.features p {
+  color: gray;
+}
+
+.something {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.something div {
+  display: flex;
+}
+
+/* change color on .text when .name is hovered */
+
+.finalheader img {
+  width: 100%;
+}
+
+.pre-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pre-footer div {
+}
+
+footer copyright {
+  text-align: center;
+}
