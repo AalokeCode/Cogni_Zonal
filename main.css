@@ -171,9 +171,15 @@ header img:hover {
 
 .something div {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* change color on .text when .name is hovered */
+
+.finalheader {
+  padding: 48px;
+}
 
 .finalheader img {
   width: 100%;
@@ -182,9 +188,19 @@ header img:hover {
 .pre-footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 48px 48px;
 }
 
 .pre-footer div {
+  background-color: #111329;
+  padding: 10px;
+}
+
+.pre-footer form input {
+  padding: 10px 40px 10px 10px;
+  background: rgb(33, 37, 78);
+  border: 0;
 }
 
 footer copyright {
