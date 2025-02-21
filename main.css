@@ -43,7 +43,7 @@ nav li {
 button {
   background-color: #cb3cff;
   color: white;
-  padding: 10px 40px;
+  padding: 10px 20px;
   border: none;
 }
 
@@ -132,6 +132,10 @@ header img:hover {
   align-items: center;
   padding: 40px 20px;
 }
+section {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
 
 .features-container {
   padding: 48px 48px;
@@ -167,14 +171,26 @@ header img:hover {
 .something {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 48px;
+  gap: 32px;
 }
 
 .something div {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #111329;
+  border-radius: 20px;
 }
 
+.something div h2 {
+  margin: 0;
+}
+.something div p {
+  margin: 0;
+  margin-bottom: 20px;
+}
 /* change color on .text when .name is hovered */
 
 .finalheader {
@@ -194,13 +210,21 @@ header img:hover {
 
 .pre-footer div {
   background-color: #111329;
-  padding: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
 }
 
 .pre-footer form input {
   padding: 10px 40px 10px 10px;
   background: rgb(33, 37, 78);
   border: 0;
+  margin-bottom: 20px;
+}
+
+.pre-footer p {
+  margin: 0;
+  margin-bottom: 10px;
+  color: gray;
 }
 
 footer copyright {
